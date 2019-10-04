@@ -8,37 +8,24 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 ?>
 
-<?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
-
-<div class="wrapper" id="wrapper-footer">
-
-	<div class="<?php echo esc_attr( $container ); ?>">
-
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
+<?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
 
 
-					</div><!-- .site-info -->
+<section class="footer-wall">
+    <div class="logo">
+        <img src="<?php echo get_template_directory_uri() . "/img/vostlogo.svg"; ?>" alt="VOST Portugal">
+    </div>
+    <div class="license">
+        <p>#METEACOLHER - 2019 VOSTPT - Voluntários Digitais em Situações de Emergências para Portugal.<br>
+            Este site e seus materiais encontram-se sob uma licença Creative Commons CC BY-NC-SA: Atribuição-NãoComercial-CompartilhaIgual.</p>
+    </div>
+</section>
 
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
 
