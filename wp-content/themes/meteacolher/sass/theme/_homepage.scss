@@ -24,11 +24,21 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   .grid-stats {
-    padding: 50px;
+    padding: $general-padding;
     color: $primary;
     text-align: center;
     background-color: $secondary;
     text-transform: uppercase;
+    h2 {
+      font-weight: bold;
+    }
+    .big-number {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .number {
+      font-weight: bold;
+    }
   }
 
   .grid-video {
@@ -36,20 +46,26 @@
   }
 
   .grid-how {
-    padding: 50px;
+    padding: $general-padding;
     background-color: $purple;
     color: $primary;
 
     h2 {
       text-align: center;
       text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 40px;
     }
 
     .btn {
       text-align: center;
       text-transform: uppercase;
-
     }
+
+  }
+
+  .call-to-action {
+    margin-top: 40px;
   }
 }
 

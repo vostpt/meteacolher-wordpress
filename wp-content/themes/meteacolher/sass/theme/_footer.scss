@@ -5,7 +5,21 @@
   color: $white;
   padding: 50px;
 
+  .social-icons {
+    text-align: center;
+    color: $primary;
+    margin-bottom: 40px;
+
+    .circle {
+      background-color: $white;
+    }
+  }
   .logo {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .license {
+    .license-img {
+      margin-bottom: 20px;
+    }
   }
 }

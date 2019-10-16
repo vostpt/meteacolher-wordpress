@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
 @import "theme/theme_variables";
 // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
 @import "assets/bootstrap4";
@@ -14,6 +16,7 @@
 // Any additional imported files //
 @import "theme/theme";
 @import "theme/homepage";
+@import "theme/how-to-act";
 @import "theme/twitter_wall";
 @import "theme/footer";
 // <-------- That's where you can add your own design. Thats your part!

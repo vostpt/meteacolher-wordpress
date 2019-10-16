@@ -7,52 +7,52 @@ get_header(); ?>
         <div class="row">
             <div class="col-12 col-sm-6 cta-text">
                 <h1>Mudar<br>
-                começa<br>
-                contigo<br>
-                <span class="call-to-action">Mete a Colher</span></h1>
+                    começa<br>
+                    contigo<br>
+                    <span class="call-to-action">Mete a Colher</span></h1>
             </div>
         </div>
     </section>
     <section class="grid-information">
         <div class="grid-stats">
-            <p>Mortes por Violência Doméstica</p>
+            <h2>Mortes por Violência Doméstica</h2>
             <br>
-            <span class="h2">12</span><br>
+            <span class="big-number">29</span><br>
             <span class="h4">em 2019</span>
             <br>
             <br>
             <div class="row">
                 <div class="col-4">
-                    <strong>11</strong>
+                    <span class="number">11</span>
                     <br>
                     Mulheres
                 </div>
                 <div class="col-4">
-                    <strong>11</strong>
+                    <span class="number">1</span>
                     <br>
-                    Mulheres
+                    Homens
                 </div>
                 <div class="col-4">
-                    <strong>11</strong>
+                    <span class="number">1</span>
                     <br>
-                    Mulheres
+                    Intersexo
                 </div>
+            </div>
+            <div class="call-to-action text-center">
+                <a href="#" class="btn btn-primary text-uppercase">
+                    Ver em Detalhe
+                </a>
             </div>
         </div>
         <div class="grid-video">
         </div>
         <div class="grid-how">
             <h2>Como atuar?</h2>
-            <p>
-                Conheces algum caso de violência doméstica
-                e queres ajudar a pessoa?<br>
-
-                Deparaste-te com uma situação de violência doméstica na rua ou no trabalho?<br>
-
-                És vítima de violência doméstica e não sabes o que fazer?
-            </p>
-            <div class="text-center">
-                <button class="btn btn-primary">Ver guia</button>
+            <p>Conheces algum caso de violência doméstica e queres ajudar a pessoa?</p>
+            <p>Deparaste-te com uma situação de violência doméstica na rua ou no trabalho?</p>
+            <p>És vítima de violência doméstica e não sabes o que fazer?</p>
+            <div class="call-to-action text-center">
+                <a href="#" class="btn btn-primary text-uppercase">Ver guia</a>
             </div>
         </div>
     </section>
@@ -89,7 +89,11 @@ get_header(); ?>
         </div>
     </section>
     <section class="twitter-wall">
+		<div class="row">
+			<div class="col-4">
 
+			</div>
+		</div>
     </section>
 <?php
 get_footer();
