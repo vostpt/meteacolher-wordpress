@@ -10,9 +10,12 @@ $white: #FFFFFF;
 $purple: #B9AFF0;
 $white-purple: #F9F7FF;
 
+$primary-light: $purple;
+
 $theme-colors: (
-        "primary": $primary,
-        "secondary": $secondary
+	"primary": $primary,
+	"secondary": $secondary,
+	"primary-light": $primary-light
 );
 
 $border-radius: 0;

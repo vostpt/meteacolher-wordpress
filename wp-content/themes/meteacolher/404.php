@@ -6,84 +6,36 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 get_header();
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 ?>
 
-<div class="wrapper" id="error-404-wrapper">
+	<div class="wrapper bg-primary-light" id="error-404-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+		<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
-		<div class="row">
+			<div class="row">
 
-			<div class="col-md-12 content-area" id="primary">
+				<div class="col-md-12 content-area" id="primary">
 
-				<main class="site-main" id="main">
+					<div class="text-center text-primary min-height-50vh p-t-50">
+						<h1 class="text-primary font-weight-bold" style="font-size: 65px;">404</h1>
 
-					<section class="error-404 not-found">
+						<p class="text-primary">A ligação que tentou aceder não foi encontrada.<br>Poderá ter sido
+							movida, removida alterada, ou até nem existir.</p>
 
-						<header class="page-header">
+						<a href="/" class="btn btn-outline-primary">Início</a>
 
-							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?></h1>
+					</div>
+				</div><!-- #primary -->
 
-						</header><!-- .page-header -->
+			</div><!-- .row -->
 
-						<div class="page-content">
+		</div><!-- #content -->
 
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'understrap' ); ?></p>
-
-							<?php get_search_form(); ?>
-
-							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-							<?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-
-								<div class="widget widget_categories">
-
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
-
-									<ul>
-										<?php
-										wp_list_categories(
-											array(
-												'orderby'    => 'count',
-												'order'      => 'DESC',
-												'show_count' => 1,
-												'title_li'   => '',
-												'number'     => 10,
-											)
-										);
-										?>
-									</ul>
-
-								</div><!-- .widget -->
-
-							<?php endif; ?>
-
-							<?php
-
-							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'understrap' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-							the_widget( 'WP_Widget_Tag_Cloud' );
-							?>
-
-						</div><!-- .page-content -->
-
-					</section><!-- .error-404 -->
-
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
-
-</div><!-- #error-404-wrapper -->
+	</div><!-- #error-404-wrapper -->
 
 <?php get_footer();
