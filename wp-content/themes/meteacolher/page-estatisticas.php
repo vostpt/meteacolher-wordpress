@@ -29,7 +29,7 @@ get_header(); ?>
 										<p><?php the_field('description'); ?></p>
 									</div>
 									<div class="col-auto">
-										<?php the_field('date_of_death'); ?>
+										<?php get_field('date_of_death'); ?>
 									</div>
 								</div>
 
